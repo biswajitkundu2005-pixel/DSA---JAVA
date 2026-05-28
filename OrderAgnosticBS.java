@@ -7,6 +7,7 @@ public class OrderAgnosticBS {
     }
 
     static int OrderAgnosticBS(int[] arr, int target) {
+        //START POINTER
         int start = 0;
         int end = arr.length - 1;
 
@@ -16,11 +17,11 @@ public class OrderAgnosticBS {
         while (start <= end) {
 
             int mid = start + (end - start) / 2;
-
+            // CHECK THE TARGET POSITION
             if (arr[mid] == target) {
                 return mid;
             }
-
+// CHECK THE GIVEN ARRAY IS ASCENDING OR DESCENDING
             if (isAsc) {
                 if (target < arr[mid]) 
                 {
