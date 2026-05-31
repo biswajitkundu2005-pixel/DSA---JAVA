@@ -9,7 +9,7 @@ public class CeilingOfANum {
     }
 
     static int CeilingBS(int[] arr, int target) {
-
+        //termination case if the number does not exist in the array.
         if (target > arr[arr.length - 1]) {
             return -1;
         }
