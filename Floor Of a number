@@ -8,7 +8,7 @@ public class Floor_OfANum {
     }
 
     static int FloorBS(int[] arr, int target) {
-
+    // no need to add the tremination case in this
         int start = 0;
         int end = arr.length - 1;
 
